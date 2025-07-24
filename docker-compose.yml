@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  looking-glass:
+    build: .
+    container_name: looking-glass
+    ports:
+      - "91:80"
+    volumes:
+      - ./config.php:/var/www/html/config.php
+    restart: unless-stopped
