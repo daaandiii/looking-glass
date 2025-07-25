@@ -34,7 +34,7 @@ final class SSH extends Authentication {
   public function __construct($config, $debug) {
     parent::__construct($config, $debug);
 
-    $this->port = isset($this->config['port']) ? (int) $this->config['port'] : 22;
+    $this->port = isset($this->config['port']) ? (int) $this->config['port'] : 2231;
 
     if ($this->debug) {
       define('NET_SSH2_LOGGING', SSH2::LOG_COMPLEX);
