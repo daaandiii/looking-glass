@@ -160,7 +160,7 @@ final class LookingGlass {
       print('<h1>'.htmlentities($this->frontpage['title']).'</h1><br>');
     }
     if ($this->frontpage['image']) {
-      print('<img src="'.$this->frontpage['image'].'" alt="Logo" style="max-width: 200px; height: auto; filter: drop-shadow(0 0 2px white);"/>');
+      print('<img src="'.$this->frontpage['image'].'" alt="Logo" style="max-width: 200px; height: auto; filter: drop-shadow(0 0 3px white) drop-shadow(0 0 5px white);"/>');
     }
     print('</div>');
     if ($this->frontpage['header_link']) {
